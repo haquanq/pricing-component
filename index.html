@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Interactive pricing component</title>
+  </style>
+</head>
+<body>
+  <div>
+    <svg id="circle_part" xmlns="http://www.w3.org/2000/svg" width="146" height="145">
+      <g fill="none" fill-rule="evenodd" stroke="#CFD8EF">
+          <circle cx="63" cy="82" r="62.5"/>
+          <circle cx="105" cy="41" r="40.5"/>
+      </g>
+    </svg>
+  
+    <svg id="back_part" xmlns="http://www.w3.org/2000/svg" width="1440" height="449">
+      <path fill="#F1F5FE" fill-rule="evenodd" d="M0 0h1440v449H191.5C85.737 449 0 363.263 0 257.5V0z"/>
+    </svg>
+    <div class="body_title">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. <span><br></span>No credit card required.</p>
+    </div>
+    
+  </div>
+
+  
+  <div class="card_container">    
+    <div class="card_body">
+      <div class="card_title">
+        <p id="pageviews"></p>
+      </div>
+      <div class="card_pricing">
+        <h1 id="data_price"></h1>
+        <p id="billingModel"></p>
+      </div>
+      <div class="card_slider">
+        <input type="range" min="0" max="100" value="50" id="val_range" class="slider_background">
+        <div id="slider_btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="13">
+            <g fill="#ffffff" fill-rule="evenodd">
+                <path d="M16 2.558v7.884a1 1 0 001.735.679l3.639-3.943a1 1 0 000-1.356l-3.64-3.943A1 1 0 0016 2.558zM6 2.558v7.884a1 1 0 01-1.735.679L.626 7.178a1 1 0 010-1.356l3.64-3.943A1 1 0 016 2.558z"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="card_paymethod">
+      <p>Monthly <span>Billing</span></p>
+      <label class="switch_box" for="toggle_btn">
+        <input id="toggle_btn" type="checkbox">
+        <span id="toggle_slider"></span>
+      </label>
+      <p>Yearly <span>Billing</span></p>
+      <span id="discount1">25% discount</span>
+      <span id="discount2">-25%</span>
+    </div>
+
+    <div class="card_footer">
+      <div>
+        <ul>
+          <li>
+            <img src="./images/checkM.svg" alt="checkmark">
+            Unlimited websites</li>
+          <li>
+            <img src="./images/checkM.svg" alt="checkmark">
+            100% data ownership</li>
+          <li>
+            <img src="./images/checkM.svg" alt="checkmark">
+            Email reports</li>
+        </ul>
+      </div>
+
+      <div>
+        <button>Start my trial</button>
+      </div>
+    </div>
+  </div>
+  <script src="./js/app.js"></script>
+</body>
+</html>

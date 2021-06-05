@@ -1,0 +1,30 @@
+@function color($map, $type) {
+    @return map-get($map, $type)
+};
+
+$priColor: (
+    soft_cyan: hsl(174, 76%, 80%), // (Full Slider Bar)
+    strong_cyan: hsl(174, 86%, 45%), // (Slider Backround)
+    light_grayish_red: hsl(14, 92%, 95%), // (Discount Background)
+    light_red: hsl(15, 100%, 70%), //(Discount Text)
+    Pale_blue: hsl(226, 100%, 87%) //(CTA Text)
+);
+
+$neuColor: (
+    whites: hsl(0, 0%, 100%), // pricing component background
+    very_pale_blue: hsl(230, 100%, 99%), // main background
+    light_grayish_blue1: hsl(226, 68%, 95%), //empty slider bar
+    light_grayish_blue2: hsl(223, 50%, 87%), // toggle background
+    grayish_blue: hsl(225, 20%, 60%), // text
+    dark_desat_blue: hsl(227, 35%, 25%) // text & CTA background
+);
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
+
+@mixin dropShadow {
+    box-shadow: rgba(17, 12, 46, 0.1) 0px 40px 100px 0px;
+}
