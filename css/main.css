@@ -40,12 +40,12 @@ body > div:first-child {
 
 #circle_part {
   position: absolute;
-  top: 41px;
+  top: 40px;
 }
 
 .body_title {
   position: absolute;
-  top: 81px;
+  top: 80px;
 }
 
 .body_title h1 {
@@ -401,6 +401,9 @@ body > div:first-child {
 }
 
 @media screen and (max-width: 550px) {
+  .body_title h1 {
+    font-size: 1.5em;
+  }
   .body_title span {
     display: initial;
   }
